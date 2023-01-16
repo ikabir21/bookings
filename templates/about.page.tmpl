@@ -1,0 +1,14 @@
+{{template "base" .}}
+
+{{define "content"}}
+<h1>this is about page</h1>
+<p>Name: {{index .StringMap "name"}}</p>
+<!-- <p>Your IP address: {{index .StringMap "remote_ip"}}</p> -->
+<p>
+    {{if ne (index .StringMap "remote_ip") ""}}
+        Your IP address: {{index .StringMap "remote_ip"}}
+    {{else}}
+        I don't know your IP yet. <a href="/">click her to detect it</a>
+    {{end}}
+</p>
+{{end}}
