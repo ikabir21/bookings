@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/ikabir21/bookings/pkg/config"
-	"github.com/ikabir21/bookings/pkg/handlers"
-	"github.com/ikabir21/bookings/pkg/render"
+	"github.com/ikabir21/bookings/internal/config"
+	"github.com/ikabir21/bookings/internal/handlers"
+	"github.com/ikabir21/bookings/internal/render"
 )
 
 const PORT = ":8081"
